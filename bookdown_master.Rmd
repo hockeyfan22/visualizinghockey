@@ -1,0 +1,18 @@
+---
+title: "Untitled"
+author: "Visualizing Hockey"
+date: "4/15/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+blogdown::new_site(theme = "zwbetz-gh/cupper-hugo-theme")
+```
+```{r}
+blogdown::serve_site()
+```
+
