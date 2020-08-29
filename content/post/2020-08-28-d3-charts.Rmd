@@ -1,10 +1,38 @@
 ---
-title: D3 Charts
-author: Visualizing Hockey
-date: '2020-08-28'
-slug: d3-charts
-categories: []
-tags: []
+title: "Test"
 ---
 
-Hello
+```{r}
+library(tidyverse)
+library(plotly)
+library(zoo)
+library(awtools)
+library(hrbrthemes)
+library(ggthemes)
+```
+
+```{r}
+leafs = read_csv('EH_game_log_tor_on-ice_all_regular_2020-08-29.csv')
+```
+```{r}
+p = leafs %>% 
+  filter(Date != "Total") %>% 
+  mutate(game = row_number()) %>% 
+  mutate(GFproll = rollmean(`GF%`, 5, na.pad = TRUE, align = "right"),
+         CFproll = rollmean(`CF%`, 5, na.pad = TRUE, align = "right"),
+         xGFproll = rollmean(`xGF%`, 5, na.pad = TRUE, align = "right"),
+         FFproll = rollmean(`FF%`, 5, na.pad = TRUE, align = "right")) %>%
+  select(game, GFproll, CFproll, FFproll, xGFproll) %>% 
+  gather(GFproll, CFproll, FFproll, xGFproll, key = "key", value = "metric") %>% 
+  ggplot(aes(game, metric)) +
+  geom_area(aes(fill = key), alpha = 0.6) +
+  geom_line(aes(color = key), size =1.5) +
+  facet_wrap(~key) +
+  scale_fill_tableau() +
+  scale_color_tableau() +
+  theme(legend.position = "none")
+
+f = ggplotly(p)
+f
+```
+
