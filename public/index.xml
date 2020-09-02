@@ -147,7 +147,7 @@ Follow the following steps:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/2020-08-28-d3-charts/</guid>
-      <description>library(tidyverse)## Warning: package &amp;#39;tidyverse&amp;#39; was built under R version 3.6.3## -- Attaching packages ----------------------------------------------------------------------------------------------------------------- tidyverse 1.3.0 --## v ggplot2 3.3.0 v purrr 0.3.3## v tibble 2.1.3 v dplyr 0.8.5## v tidyr 1.0.2 v stringr 1.4.0## v readr 1.3.1 v forcats 0.5.0## Warning: package &amp;#39;tidyr&amp;#39; was built under R version 3.6.3## Warning: package &amp;#39;dplyr&amp;#39; was built under R version 3.</description>
+      <description># based on the excellent example on https://deanattali.com/blog/building-shiny-apps-tutorial/library(shiny)## Warning: package &amp;#39;shiny&amp;#39; was built under R version 3.6.3library(ggplot2)library(data.table)## Warning: package &amp;#39;data.table&amp;#39; was built under R version 3.6.3library(tidyverse)## Warning: package &amp;#39;tidyverse&amp;#39; was built under R version 3.6.3## -- Attaching packages ----------------------------------------------------------------------------------------------------------------- tidyverse 1.3.0 --## v tibble 2.1.3 v dplyr 0.8.5## v tidyr 1.0.2 v stringr 1.4.0## v readr 1.3.1 v forcats 0.</description>
     </item>
     
   </channel>
