@@ -1,0 +1,13 @@
+---
+title: 'Leafs Fans: Reasons for Optimism'
+author: ''
+date: '2020-10-30'
+slug: leafs-fans-reasons-for-optimism
+categories: []
+tags: []
+---
+
+hi - this is going to overwrite stuff - but will it still work?
+
+<iframe width="100%" height="684" frameborder="0"
+  src="https://observablehq.com/embed/@hockeyfan22/multi-line-chart?cell=chart"></iframe>
